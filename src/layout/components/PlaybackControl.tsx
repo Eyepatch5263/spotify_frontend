@@ -143,7 +143,7 @@ const PlaybackControl = () => {
 
                     <div className='flex items-center gap-2'>
                         <Button size='icon' variant='ghost' className='hover:text-white text-zinc-400'>
-                            <Volume1 className='h-4 w-4' />
+                            <Volume1 className='h-4 w-4' />a
                         </Button>
 
                         <Slider
@@ -151,7 +151,7 @@ const PlaybackControl = () => {
                             max={100}
                             step={1}
                             className='w-24 hover:cursor-grab active:cursor-grabbing'
-                            onValueChange={(value) => {
+                            onValueChange={(value:number[]) => {
                                 setVolume(value[0]);
                                 if (audioRef.current) {
                                     audioRef.current.volume = value[0] / 100;

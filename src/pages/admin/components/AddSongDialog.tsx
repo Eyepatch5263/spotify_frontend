@@ -154,7 +154,7 @@ const AddSongDialog = () => {
                         <label className='text-sm font-medium'>Album (Optional)</label>
                         <Select
                             value={newSong.albumId}
-                            onValueChange={(value) => setNewSong({ ...newSong, albumId: value })}
+                            onValueChange={(value:string) => setNewSong({ ...newSong, albumId: value })}
                         >
                             <SelectTrigger className='bg-zinc-800 border-zinc-700'>
                                 <SelectValue placeholder='Select album' />
