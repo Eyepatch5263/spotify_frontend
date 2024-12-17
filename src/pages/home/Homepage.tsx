@@ -29,6 +29,7 @@ const Homepage = () => {
           imageUrl: user.imageUrl
         })
       } catch (error) {
+        console.log(error);
         console.log("Error in auth callback")
       }
     }
