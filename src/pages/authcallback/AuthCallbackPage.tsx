@@ -1,5 +1,4 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { axiosInstance } from '@/lib/axios'
 import { useUser } from '@clerk/clerk-react'
 import { LoaderPinwheel } from 'lucide-react'
 import { useEffect, useRef } from 'react'

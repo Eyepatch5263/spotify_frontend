@@ -6,7 +6,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 const FriendsActivity = () => {
-    const { users, isLoading, error, fetchUsers, onlineUsers, userActivities } = useChatStore()
+    const { users, fetchUsers, onlineUsers, userActivities } = useChatStore()
     const user = useUser()
     useEffect(() => {
         if (user) fetchUsers()

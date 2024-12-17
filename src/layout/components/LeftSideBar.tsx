@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const LeftSideBar = () => {
-    const { albums, songs, isLoading, fetchAlbums } = useMusicStore()
+    const { albums, isLoading, fetchAlbums } = useMusicStore()
     useEffect(() => {
         fetchAlbums()
     }, [fetchAlbums])
