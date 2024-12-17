@@ -18,7 +18,7 @@ const AuthCallbackPage = () => {
                 console.log("Error in auth callback")
             }
             finally{
-                navigate('https://api.github.com')
+                navigate('/')
             }
         }
         syncUser()
