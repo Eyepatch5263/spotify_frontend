@@ -22,7 +22,7 @@ interface ChatStore {
     setSelectedUser: (user: User) => void
 }
 
-const baseURL ="https://spotify-eye-ic6bk.ondigitalocean.app"
+const baseURL ="https://spotify-backend-eye-970634887ce3.herokuapp.com"
 const socket = io(baseURL, {
     autoConnect: false,
     withCredentials: true
