@@ -18,7 +18,7 @@ const AuthCallbackPage = () => {
                 console.log("Error in auth callback")
             }
             finally{
-                navigate('/')
+                navigate('https://spotify-eye-ic6bk.ondigitalocean.app/')
             }
         }
         syncUser()
