@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/sso-callback' element={<AuthenticateWithRedirectCallback signInForceRedirectUrl={'/'} />} />
+        <Route path='/sso-callback' element={<AuthenticateWithRedirectCallback signInForceRedirectUrl={'/authcallback'} />} />
         <Route path='/authcallback' element={<AuthCallbackPage />} />
         <Route path='/admin' element={<AdminPage/>} />
         <Route element={<MainLayout />}>
